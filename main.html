@@ -1,0 +1,2177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BILL CENTRAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/logo.webp" type="image/png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --leading-180: 180%;
+        --leading-160: 160%;
+        --leading-100: 100%;
+        --leading-110: 110%;
+        --leading-99: 99%;
+        --leading-150: 150%;
+        --leading-128: 128%;
+
+        --color-deep-blue: rgba(0, 23, 31, 1);
+        --color-prussian-blue: rgba(0, 52, 89, 1);
+        --color-sky-blue: rgba(0, 168, 232, 1);
+        --color-crisp-blue: rgba(0, 126, 167, 1);
+        --color-light-blue: rgba(234, 249, 255, 1);
+
+        --color-light: rgba(0, 0, 0, 0.2);
+        --color-gray: rgba(75, 75, 75, 1);
+        --color-blue-layer: rgba(234, 249, 255, 0.94);
+        --color-border-color: rgba(0, 0, 0, 0.1);
+        --color-card-border: rgba(0, 23, 31, 0.1);
+
+        --shadow-custom: 0px 0px 13.9px 0px rgba(0, 0, 0, 0.1);
+        --shadow-card: 0px 0px 13.9px 0px rgba(0, 0, 0, 0.1);
+        --shadow-accordion: 0px 4px 23.2px 0px rgba(0, 0, 0, 0.08);
+
+        --breakpoing-custom: 425px;
+      }
+    </style>
+  </head>
+  <body class="font-[Helvetica,Arial,sans-serif] select-none">
+    <section class="min-h-fit">
+      <div
+        class="bg min-h-fit xl:min-h-[810px] bg-[url(assets/images/bg.webp)] bg-no-repeat bg-cover rounded-bl-[200px] px-4"
+      >
+        <header class="h-[80px] w-full">
+          <div class="container mx-auto w-full max-w-[1140px]">
+            <nav class="relative flex w-full items-center justify-between py-5">
+              <div class="left">
+                <div class="logo flex items-center gap-[7px] sm:gap-[10px]">
+                  <a href="#">
+                    <img
+                      width="105"
+                      height="40"
+                      class="cursor-pointer"
+                      src="assets/images/logo.webp"
+                      alt="nav-logo"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <input type="checkbox" id="menu-connect" class="peer hidden" />
+
+              <div class="middle absolute left-[27%] hidden xl:block">
+                <div class="items flex flex-row items-center gap-6">
+                  <div class="middle-item">
+                    <a
+                      href="#"
+                      class="group relative inline-block font-normal text-white opacity-90"
+                    >
+                      About
+
+                      <span
+                        class="absolute bottom-[-3px] left-0 h-[2px] w-0 bg-white transition-all duration-300 opacity-90 ease-out group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+
+                  <div class="middle-item">
+                    <a
+                      href="#"
+                      class="group relative inline-block font-normal text-white opacity-90"
+                    >
+                      How it works
+
+                      <span
+                        class="absolute bottom-[-3px] left-0 h-[2px] w-0 bg-white transition-all duration-300 opacity-90 ease-out group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+
+                  <div class="middle-item">
+                    <a
+                      href="#"
+                      class="group relative inline-block font-normal text-white opacity-90"
+                    >
+                      Services
+
+                      <span
+                        class="absolute bottom-[-3px] left-0 h-[2px] w-0 bg-white transition-all duration-300 opacity-90 ease-out group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+
+                  <div class="middle-item">
+                    <a
+                      href="#"
+                      class="group relative inline-block font-normal text-white opacity-90"
+                    >
+                      Testimonials
+
+                      <span
+                        class="absolute bottom-[-3px] left-0 h-[2px] w-0 bg-white transition-all duration-300 opacity-90 ease-out group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+
+                  <div class="middle-item">
+                    <a
+                      href="#"
+                      class="group relative inline-block font-normal text-white opacity-90"
+                    >
+                      Why Us
+
+                      <span
+                        class="absolute bottom-[-3px] left-0 h-[2px] w-0 bg-white transition-all duration-300 opacity-90 ease-out group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+
+                  <div class="middle-item">
+                    <a
+                      href="#"
+                      class="group relative inline-block font-normal text-white opacity-90"
+                    >
+                      FAQ
+
+                      <span
+                        class="absolute bottom-[-3px] left-0 h-[2px] w-0 bg-white transition-all duration-300 opacity-90 ease-out group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="right hidden items-center xl:flex">
+                <button
+                  class="group relative overflow-hidden cursor-pointer flex w-full max-w-[154px] items-center gap-[3px] whitespace-nowrap rounded-br-[20px] rounded-bl-[20px] rounded-tr-[20px] bg-white px-5 py-3 text-base font-bold leading-100 text-deep-blue"
+                >
+                  Get started
+
+                  <span
+                    class="relative z-10 transition-transform duration-300 ease-out group-hover:translate-x-[30px] group-hover:-translate-y-[30px]"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 19L19 6M6.52 6H19V18.48"
+                        stroke="#00171F"
+                        stroke-width="1.93338"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+
+              <label
+                for="menu-connect"
+                class="menu-button relative z-[60] flex h-5 w-5 cursor-pointer flex-col justify-between xl:hidden [&>span]:block [&>span]:h-[2px] [&>span]:w-5 [&>span]:rounded [&>span]:bg-white [&>span]:transition-all [&>span]:duration-300 [&>span]:ease-in-out peer-checked:[&>span:nth-child(1)]:translate-y-[9px] peer-checked:[&>span:nth-child(1)]:rotate-45 peer-checked:[&>span:nth-child(2)]:scale-0 peer-checked:[&>span:nth-child(2)]:opacity-0 peer-checked:[&>span:nth-child(3)]:-translate-y-[9px] peer-checked:[&>span:nth-child(3)]:-rotate-45"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+
+              <div
+                class="invisible fixed top-0 right-0 z-50 flex h-full w-[70vw] translate-x-full flex-col items-center justify-center gap-[40px] bg-deep-blue px-5 opacity-0 shadow-2xl transition-all duration-300 ease-in-out peer-checked:visible peer-checked:translate-x-0 peer-checked:opacity-100 xl:hidden"
+              >
+                <div class="items flex flex-col items-center gap-[30px]">
+                  <div class="middle-item">
+                    <a
+                      href="#"
+                      class="group relative inline-block font-normal text-white opacity-90"
+                    >
+                      About
+
+                      <span
+                        class="absolute bottom-[-3px] left-0 h-[2px] w-0 bg-white transition-all duration-300 opacity-90 ease-out group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+
+                  <div class="middle-item">
+                    <a
+                      href="#"
+                      class="group relative inline-block font-normal text-white opacity-90"
+                    >
+                      How It Works
+
+                      <span
+                        class="absolute bottom-[-3px] left-0 h-[2px] w-0 bg-white transition-all duration-300 opacity-90 ease-out group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+
+                  <div class="middle-item">
+                    <a
+                      href="#"
+                      class="group relative inline-block font-normal text-white opacity-90"
+                    >
+                      Services
+
+                      <span
+                        class="absolute bottom-[-3px] left-0 h-[2px] w-0 bg-white transition-all duration-300 opacity-90 ease-out group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+
+                  <div class="middle-item">
+                    <a
+                      href="#"
+                      class="group relative inline-block font-normal text-white opacity-90"
+                    >
+                      Testimonials
+
+                      <span
+                        class="absolute bottom-[-3px] left-0 h-[2px] w-0 bg-white transition-all duration-300 opacity-90 ease-out group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+
+                  <div class="middle-item">
+                    <a
+                      href="#"
+                      class="group relative inline-block font-normal text-white opacity-90"
+                    >
+                      Why Us
+
+                      <span
+                        class="absolute bottom-[-3px] left-0 h-[2px] w-0 bg-white transition-all duration-300 opacity-90 ease-out group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+
+                  <div class="middle-item">
+                    <a
+                      href="#"
+                      class="group relative inline-block font-normal text-white opacity-90"
+                    >
+                      FAQ
+
+                      <span
+                        class="absolute bottom-[-3px] left-0 h-[2px] w-0 bg-white transition-all duration-300 opacity-90 ease-out group-hover:w-full"
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="right flex items-center">
+                  <button
+                    class="group relative overflow-hidden cursor-pointer flex w-full max-w-[154px] items-center gap-[3px] whitespace-nowrap rounded-br-[20px] rounded-bl-[20px] rounded-tr-[20px] bg-white px-5 py-3 text-base font-bold leading-100 text-deep-blue"
+                  >
+                    Get started
+
+                    <span
+                      class="relative z-10 transition-transform duration-300 ease-out group-hover:translate-x-[30px] group-hover:-translate-y-[30px]"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M6 19L19 6M6.52 6H19V18.48"
+                          stroke="#00171F"
+                          stroke-width="1.93338"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <div class="container max-w-[1140px] w-full mx-auto">
+          <div
+            class="row flex xl:items-center flex-col xl:flex-row pt-[53px] xl:pb-0 md:pb-[60px] pb-[80px] gap-5 xl:gap-0"
+          >
+            <div class="left max-w-[584px]">
+              <h1
+                class="heading text-white font-normal text-[clamp(32px,4.44vw,64px)] leading-110"
+              >
+                Easily Compare
+                <span class="font-bold">Energy, Gas, And Internet</span> Plans
+              </h1>
+              <p
+                class="para text-[clamp(16px,1.25vw,18px)] font-normal leading-150 text-white opacity-90 mt-4"
+              >
+                Find and switch to the best energy, gas, and internet plans with
+                ease. Our platform simplifies your search, letting you compare
+                providers and make informed decisions, all in one place.
+              </p>
+              <div
+                class="part max-w-[476px] bg-white mt-[clamp(24px,2.92vw,42px)] py-[9px] pr-[9px] pl-[22px] items-center flex gap-5 border border-solid border-light rounded-tr-[100px] rounded-br-[100px] rounded-bl-[70px]"
+              >
+                <input
+                  type="text"
+                  class="resize-none text-deep-blue font-normal leading-110 outline-none text-nowrap w-full opacity-50"
+                  name="address"
+                  id="address"
+                  placeholder="Start typing your address"
+                />
+                <button
+                  class="compare-btn cursor-pointer group overflow-hidden relative flex w-full max-w-[137px] items-center gap-[3px] rounded-br-[50px] rounded-bl-[50px] rounded-tr-[50px] bg-sky-blue px-5 py-3 text-white"
+                >
+                  Compare
+
+                  <span
+                    class="relative z-10 transition-transform duration-300 ease-out group-hover:translate-x-[30px] group-hover:-translate-y-[30px]"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 19L19 6M6.52 6H19V18.48"
+                        stroke="white"
+                        stroke-width="1.93338"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="right xl:mb-[-200px] xl:-mr-[40px] max-w-[621px]">
+              <img
+                width="621"
+                height="816"
+                class="h-auto object-cover"
+                src="assets/images/women-working.webp"
+                alt="women-working"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="min-h-fit px-4">
+      <div class="container max-w-[1140px] w-full mx-auto">
+        <div class="row w-full pt-[54px] pb-[60px] md:pb-[80px] lg:pb-[162px]">
+          <h1
+            class="heading max-w-[548px] text-prussian-blue font-normal leading-110 text-[clamp(28px,2.64vw,38px)]"
+          >
+            More than
+            <span class="text-sky-blue font-bold leading-110">80,000</span>+
+            companies trust bill central
+          </h1>
+          <div class="logos max-w-[1129px] overflow-hidden mt-16">
+            <div class="logos-track flex gap-[51px] w-max">
+              <div
+                class="logo max-w-[80px] md:max-w-[126.67px] w-full shrink-0"
+              >
+                <img
+                  width="126.67"
+                  height="62.12"
+                  class="w-full h-[62px] object-cover"
+                  src="assets/images/1st-energy.webp"
+                  alt="1st-energy"
+                />
+              </div>
+
+              <div
+                class="logo max-w-[80px] md:max-w-[126.67px] items-center flex justify-center w-full shrink-0"
+              >
+                <img
+                  width="102"
+                  height="42"
+                  class="w-[102px] h-[42px] object-contain"
+                  src="assets/images/blue-nrg.webp"
+                  alt="blue-nrg"
+                />
+              </div>
+
+              <div
+                class="logo max-w-[80px] md:max-w-[126.67px] items-center flex justify-center w-full shrink-0"
+              >
+                <img
+                  width="92"
+                  height="32"
+                  class="w-[92px] h-[32px] object-contain"
+                  src="assets/images/dodo.webp"
+                  alt="dodo"
+                />
+              </div>
+
+              <div
+                class="logo max-w-[80px] md:max-w-[126.67px] items-center flex justify-center w-full shrink-0"
+              >
+                <img
+                  width="49"
+                  height="62"
+                  class="w-[49px] h-[62px] object-cover"
+                  src="assets/images/origin.webp"
+                  alt="origin"
+                />
+              </div>
+
+              <div
+                class="logo max-w-[80px] md:max-w-[126.67px] items-center flex justify-center w-full shrink-0"
+              >
+                <img
+                  width="62"
+                  height="62"
+                  class="w-[62px] h-[62px] object-cover"
+                  src="assets/images/pvo.webp"
+                  alt="pvo"
+                />
+              </div>
+
+              <div
+                class="logo max-w-[80px] md:max-w-[126.67px] items-center flex justify-center w-full shrink-0"
+              >
+                <img
+                  width="84"
+                  height="43"
+                  class="w-[84px] h-[43px] object-cover"
+                  src="assets/images/sumo.webp"
+                  alt="sumo"
+                />
+              </div>
+
+              <div
+                class="logo max-w-[80px] md:max-w-[126.67px] items-center flex justify-center w-full shrink-0"
+              >
+                <img
+                  width="63"
+                  height="62"
+                  class="w-[63px] h-[62px] object-contain"
+                  src="assets/images/agl.webp"
+                  alt="agl"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="bottom-part max-w-[1140px] flex flex-col lg:flex-row lg:items-center gap-[75px] mt-[clamp(80px,11.25vw,162px)]"
+          >
+            <div class="left">
+              <img
+                width="507"
+                height="451"
+                src="assets/images/men-working.webp"
+                class="h-auto object-cover"
+                alt="men-working"
+              />
+            </div>
+            <div class="right max-w-[558px]">
+              <h1
+                class="heading-above text-[clamp(32px,3.33vw,48px)] font-bold text-deep-blue leading-110"
+              >
+                Switching Energy
+              </h1>
+              <h1
+                class="heading-below text-[clamp(32px,3.33vw,48px)] font-normal text-deep-blue leading-110"
+              >
+                Made Simple
+              </h1>
+              <p
+                class="para text-deep-blue opacity-90 leading-150 font-normal text-[clamp(14px,1.11vw,16px)] mt-4"
+              >
+                Say goodbye to confusing energy plans! We simplify the process
+                by providing clear and competitive electricity and gas
+                recommendations. Whether you're moving or just seeking a better
+                deal, our platform connects you with the best energy providers
+                quickly and easily, helping you save on energy bills.
+              </p>
+              <div class="list max-w-[393px]">
+                <h1
+                  class="list-heading text-prussian-blue font-normal text-[clamp(18px,1.67vw,24px)] leading-110 mt-[clamp(24px,2.64vw,38px)]"
+                >
+                  Benefits of Comparing Energy Plans
+                </h1>
+                <ul class="list-disc pl-6 mt-[28px]">
+                  <li
+                    class="text-deep-blue font-normal text-[clamp(14px,1.11vw,16px)] leading-150 opacity-90"
+                  >
+                    Save money by finding cheaper deals.
+                  </li>
+                  <li
+                    class="text-deep-blue font-normal text-[clamp(14px,1.11vw,16px)] leading-150 opacity-90"
+                  >
+                    Get better customer service.
+                  </li>
+                  <li
+                    class="text-deep-blue font-normal text-[clamp(14px,1.11vw,16px)] leading-150 opacity-90"
+                  >
+                    Explore greener, more sustainable energy options.
+                  </li>
+                </ul>
+                <button
+                  class="compare-btn mt-[clamp(24px,2.92vw,42px)] cursor-pointer group overflow-hidden relative flex w-full max-w-[201px] font-bold text-base items-center gap-[3px] rounded-br-[50px] rounded-bl-[50px] rounded-tr-[50px] bg-sky-blue px-5 py-3 text-white"
+                >
+                  Compare With Us
+
+                  <span
+                    class="relative z-10 transition-transform duration-300 ease-out group-hover:translate-x-[30px] group-hover:-translate-y-[30px]"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 19L19 6M6.52 6H19V18.48"
+                        stroke="white"
+                        stroke-width="1.93338"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full min-h-fit px-4 xl:px-0">
+      <div class="row w-full flex items-center justify-center flex-col">
+        <div class="section-text xl:text-center">
+          <h1
+            class="heading text-[clamp(32px,3.33vw,48px)] text-deep-blue leading-110 font-normal"
+          >
+            Simple Steps to <span class="leading-110 font-bold">Switch</span>
+          </h1>
+          <p
+            class="para max-w-[610px] mt-4 leading-160 font-normal text-[clamp(14px,1.11vw,16px)] text-gray opacity-90"
+          >
+            Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget
+            consectetur mi. Vulputate sapien a a bibendum
+          </p>
+        </div>
+        <div
+          class="cards w-full flex flex-wrap justify-center mt-[clamp(24px,4.03vw,58px)] gap-[20px] md:gap-0"
+        >
+          <div
+            class="card w-[360px] relative min-h-[650px] overflow-hidden group cursor-pointer border-r border-b lg:border-b-0 border-border-color"
+          >
+            <img
+              width="360"
+              height="661"
+              src="./assets/images/map.webp"
+              alt="card-img"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div
+              class="layer absolute inset-0 z-10 bg-blue-layer transition-transform duration-700 ease-out group-hover:-translate-y-full"
+            ></div>
+            <div
+              class="heading whitespace-nowrap absolute z-20 left-1/2 top-1/2 w-max max-w-[90%] text-deep-blue text-[clamp(20px,2.22vw,32px)] leading-[110%] font-normal [writing-mode:vertical-rl] rotate-180 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 group-hover:opacity-0 group-hover:-translate-y-[40%]"
+            >
+              <span class="font-bold"> 1. </span>
+              Enter Your Location And Preferences
+            </div>
+            <div
+              class="small-card absolute z-30 p-[clamp(20px,2.22vw,32px)] left-0 right-0 bottom-[-1px] min-h-[217px] text-white bg-prussian-blue translate-y-full transition-transform duration-700 ease-out group-hover:translate-y-0"
+            >
+              <h3
+                class="text-[clamp(20px,2.22vw,32px)] leading-110 font-normal mb-[18px]"
+              >
+                1. Enter Your Location And Preferences
+              </h3>
+              <p class="max-w-[360px] text-[16px] leading-160">
+                Complete the process in just a few clicks. We’ll handle the rest
+                and ensure a smooth transition to your new provider.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card w-[360px] relative min-h-[650px] overflow-hidden group cursor-pointer border-r border-b lg:border-b-0 border-border-color"
+          >
+            <img
+              width="360"
+              height="661"
+              src="./assets/images/coat.webp"
+              alt="card-img"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div
+              class="layer absolute inset-0 z-10 bg-blue-layer transition-transform duration-700 ease-out group-hover:-translate-y-full"
+            ></div>
+            <div
+              class="heading whitespace-nowrap absolute z-20 left-1/2 top-[68%] w-max max-w-[90%] text-deep-blue text-[clamp(20px,2.22vw,32px)] leading-[110%] font-normal [writing-mode:vertical-rl] rotate-180 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 group-hover:opacity-0 group-hover:-translate-y-[40%]"
+            >
+              <span class="font-bold"> 2. </span>
+              Compare Providers
+            </div>
+            <div
+              class="small-card absolute z-30 p-[clamp(20px,2.22vw,32px)] left-0 right-0 bottom-[-1px] min-h-[217px] text-white bg-prussian-blue translate-y-full transition-transform duration-700 ease-out group-hover:translate-y-0"
+            >
+              <h3
+                class="text-[clamp(20px,2.22vw,32px)] leading-110 font-normal mb-[18px]"
+              >
+                2. Compare Providers
+              </h3>
+              <p class="max-w-[360px] text-[16px] leading-160">
+                Complete the process in just a few clicks. We’ll handle the rest
+                and ensure a smooth transition to your new provider.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card w-[360px] relative min-h-[650px] overflow-hidden group cursor-pointer border-r border-b lg:border-b-0 border-border-color"
+          >
+            <img
+              width="360"
+              height="661"
+              src="./assets/images/smiling.webp"
+              alt="card-img"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div
+              class="layer absolute inset-0 z-10 bg-blue-layer transition-transform duration-700 ease-out group-hover:-translate-y-full"
+            ></div>
+            <div
+              class="heading whitespace-nowrap absolute z-20 left-1/2 top-[74%] w-max max-w-[90%] text-deep-blue text-[clamp(20px,2.22vw,32px)] leading-[110%] font-normal [writing-mode:vertical-rl] rotate-180 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 group-hover:opacity-0 group-hover:-translate-y-[40%]"
+            >
+              <span class="font-bold"> 3. </span>
+              Switch Easily
+            </div>
+            <div
+              class="small-card absolute z-30 p-[clamp(20px,2.22vw,32px)] left-0 right-0 bottom-[-1px] min-h-[217px] text-white bg-prussian-blue translate-y-full transition-transform duration-700 ease-out group-hover:translate-y-0"
+            >
+              <h3
+                class="text-[clamp(20px,2.22vw,32px)] leading-110 font-normal mb-[18px]"
+              >
+                3. Switch Easily
+              </h3>
+              <p class="max-w-[360px] text-[16px] leading-160">
+                Complete the process in just a few clicks. We’ll handle the rest
+                and ensure a smooth transition to your new provider.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card w-[360px] relative min-h-[650px] overflow-hidden group cursor-pointer border-r border-b lg:border-b-0 border-border-color"
+          >
+            <img
+              width="360"
+              height="661"
+              src="./assets/images/business.webp"
+              alt="card-img"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div
+              class="layer absolute inset-0 z-10 bg-blue-layer transition-transform duration-700 ease-out group-hover:-translate-y-full"
+            ></div>
+            <div
+              class="heading whitespace-nowrap absolute z-20 left-1/2 top-[65%] w-max max-w-[90%] text-deep-blue text-[clamp(20px,2.22vw,32px)] leading-[110%] font-normal [writing-mode:vertical-rl] rotate-180 -translate-x-1/2 -translate-y-1/2 transition-all duration-500 group-hover:opacity-0 group-hover:-translate-y-[40%]"
+            >
+              <span class="font-bold"> 4. </span>
+              Choose the Best Plan
+            </div>
+            <div
+              class="small-card absolute z-30 p-[clamp(20px,2.22vw,32px)] left-0 right-0 bottom-[-1px] min-h-[217px] text-white bg-prussian-blue translate-y-full transition-transform duration-700 ease-out group-hover:translate-y-0"
+            >
+              <h3
+                class="text-[clamp(20px,2.22vw,32px)] leading-110 font-normal mb-[18px]"
+              >
+                4. Choose the Best Plan
+              </h3>
+              <p class="max-w-[360px] text-[16px] leading-160">
+                Complete the process in just a few clicks. We’ll handle the rest
+                and ensure a smooth transition to your new provider.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="min-h-fit w-full px-4">
+      <div class="container max-w-[1140px] w-full mx-auto">
+        <div
+          class="row flex flex-col xl:flex-row py-[60px] md:py-[80px] lg:py-[162px] gap-[clamp(24px,5.07vw,73px)] xl:items-center"
+        >
+          <div class="left max-w-[558px]">
+            <h1
+              class="heading max-w-[456px] text-[clamp(32px,3.33vw,48px)] text-deep-blue leading-110 font-normal"
+            >
+              Comprehensive Utility
+              <span class="font-bold leading-110">Comparisons</span>
+            </h1>
+            <div
+              class="accordions flex flex-col gap-[clamp(16px,1.67vw,24px)] mt-[clamp(24px,3.19vw,46px)]"
+            >
+              <div
+                class="accordion w-full bg-white p-[14px] border border-solid border-border-color rounded shadow-custom group transition-all duration-500 ease-out"
+              >
+                <input
+                  type="checkbox"
+                  id="accordion-toggle-1"
+                  class="peer hidden"
+                  checked
+                />
+
+                <label
+                  for="accordion-toggle-1"
+                  class="flex items-start justify-between list-none cursor-pointer select-none"
+                >
+                  <div
+                    class="accordion-headers flex gap-[clamp(16px,1.67vw,24px)] items-center"
+                  >
+                    <div
+                      class="size-[clamp(40px,6.28vw,64px)] rounded-full bg-light-blue flex justify-center items-center transition-all duration-500 ease-out group-hover:bg-prussian-blue"
+                    >
+                      <svg
+                        width="34"
+                        height="34"
+                        viewBox="0 0 34 34"
+                        class="w-[clamp(24px,2.36vw,34px)] h-[clamp(24px,2.36vw,34px)]"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M13.0123 12.7354C12.4622 12.7354 12.0146 13.1829 12.0146 13.733C12.0146 14.2831 12.4622 14.7307 13.0123 14.7307H14.01V13.733C14.01 13.1829 13.5624 12.7354 13.0123 12.7354Z"
+                          fill="#007EA7"
+                        />
+                        <path
+                          d="M20.9879 12.7354C20.4377 12.7354 19.9902 13.1829 19.9902 13.733V14.7307H20.9879C21.5379 14.7307 21.9855 14.2831 21.9855 13.733C21.9855 13.1829 21.538 12.7354 20.9879 12.7354Z"
+                          fill="#007EA7"
+                        />
+                        <path
+                          d="M17.9984 16.7227H16.0029V25.3614H17.9984V16.7227Z"
+                          fill="#007EA7"
+                        />
+                        <path
+                          d="M23.8554 31.6738H10.1445V34H23.8554V31.6738Z"
+                          fill="#007EA7"
+                        />
+                        <path
+                          d="M25.0579 3.41425C23.0265 1.31648 20.3033 0.106423 17.3898 0.00681343C14.3331 -0.0975772 11.4397 1.00052 9.24298 3.09889C7.04912 5.19467 5.8214 8.02995 5.78594 11.0825C5.75692 13.5814 6.53275 15.9547 8.02934 17.9461C9.44685 19.8323 10.1201 22.1926 10.1438 25.3619H14.0106V16.7233H13.0129C11.3643 16.7233 10.023 15.382 10.023 13.7334C10.023 12.0848 11.3643 10.7436 13.0129 10.7436C14.6615 10.7436 16.0027 12.0848 16.0027 13.7334V14.7311H17.9981V13.7334C17.9981 12.0848 19.3393 10.7436 20.9879 10.7436C22.6365 10.7436 23.9778 12.0848 23.9778 13.7334C23.9778 15.382 22.6365 16.7233 20.9879 16.7233H19.9903V25.3619H23.8574C23.8905 22.192 24.5711 19.8215 25.9922 17.9183C27.4468 15.9704 28.2156 13.6526 28.2156 11.2153C28.2156 8.28754 27.0942 5.51707 25.0579 3.41425Z"
+                          fill="#007EA7"
+                        />
+                        <path
+                          d="M23.8554 27.3545H10.1445V29.682H23.8554V27.3545Z"
+                          fill="#007EA7"
+                        />
+                      </svg>
+                    </div>
+
+                    <span
+                      class="heading text-deep-blue text-[clamp(18px,1.67vw,24px)] leading-110 opacity-90 font-normal"
+                    >
+                      Electricity Plan Comparisons
+                    </span>
+                  </div>
+
+                  <span
+                    class="mt-6 transition-transform duration-500 peer-checked:rotate-180"
+                  >
+                    <svg
+                      width="15"
+                      height="9"
+                      viewBox="0 0 15 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.330173 0.344159C0.541647 0.123794 0.828428 3.62117e-08 1.12745 4.92825e-08C1.42648 6.23532e-08 1.71326 0.123794 1.92473 0.344159L7.50681 6.16269L13.0889 0.34416C13.3016 0.13004 13.5864 0.0115597 13.8821 0.014238C14.1778 0.0169162 14.4606 0.140538 14.6697 0.358478C14.8788 0.576418 14.9974 0.871238 15 1.17944C15.0025 1.48764 14.8889 1.78457 14.6834 2.00626L8.30409 8.65584C8.09261 8.87621 7.80583 9 7.50681 9C7.20778 9 6.921 8.87621 6.70953 8.65584L0.330173 2.00626C0.118763 1.78583 -6.49944e-08 1.4869 -5.137e-08 1.17521C-3.77456e-08 0.863519 -6.49944e-08 0.564591 -5.137e-08 0.344159Z"
+                        fill="#00171F"
+                      />
+                    </svg>
+                  </span>
+                </label>
+
+                <div
+                  class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out peer-checked:grid-rows-[1fr]"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="para max-w-[442px] pl-[80px] pt-3 pb-2 font-normal text-deep-blue opacity-90 text-base leading-160"
+                    >
+                      Whether you want renewable energy, low rates, or flexible
+                      contracts, we'll help you find the best provider.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion w-full bg-white p-[14px] border border-solid border-border-color rounded shadow-custom group transition-all duration-500 ease-out"
+              >
+                <input
+                  type="checkbox"
+                  id="accordion-toggle-2"
+                  class="peer hidden"
+                />
+
+                <label
+                  for="accordion-toggle-2"
+                  class="flex items-center justify-between list-none cursor-pointer select-none"
+                >
+                  <div
+                    class="accordion-headers flex gap-[clamp(16px,1.67vw,24px)] items-center"
+                  >
+                    <div
+                      class="size-[clamp(40px,6.28vw,64px)] rounded-full bg-light-blue flex justify-center items-center transition-all duration-500 ease-out group-hover:bg-prussian-blue"
+                    >
+                      <svg
+                        width="28"
+                        height="30"
+                        viewBox="0 0 28 30"
+                        class="w-[clamp(22px,1.94vw,28px)] h-[clamp(24px,2.36vw,30px)]"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="transition-all duration-500 ease-out group-hover:fill-white"
+                          d="M2.5 0C1.13662 0 0 1.13662 0 2.5V28.75C7.2475e-05 29.4403 0.559674 29.9999 1.25 30H16.25C16.9403 29.9999 17.4999 29.4403 17.5 28.75V23.125C17.5 22.7798 17.7798 22.5 18.125 22.5H18.75C19.4552 22.5 20 23.0448 20 23.75V25C20 27.0563 21.6937 28.75 23.75 28.75C25.8063 28.75 27.5 27.0563 27.5 25V8.75C27.5 7.57076 26.9444 6.45706 26.001 5.74951L21.9995 2.74902C21.3888 2.29109 20.6082 2.51259 20.249 3.00049C19.8395 3.55675 19.9474 4.33718 20.5005 4.75098L21.9995 5.87402C22.3148 6.11016 22.5002 6.48111 22.5 6.875V10C22.5 11.153 23.3089 12.1419 24.3823 12.4219C24.7156 12.5088 25 12.7798 25 13.125V25C25 25.7052 24.4552 26.25 23.75 26.25C23.0448 26.25 22.5 25.7052 22.5 25V23.75C22.5 21.6937 20.8063 20 18.75 20H18.125C17.7798 20 17.5 19.7202 17.5 19.375V2.5C17.5 1.13662 16.3634 3.75e-08 15 3.75e-08L2.5 0ZM3.125 2.5H14.375C14.7212 2.5 15 2.77875 15 3.125V11.875C15 12.2212 14.7212 12.5 14.375 12.5H3.125C2.77875 12.5 2.5 12.2212 2.5 11.875V3.125C2.5 2.77875 2.77875 2.5 3.125 2.5Z"
+                          fill="#007EA7"
+                        />
+                      </svg>
+                    </div>
+                    <span
+                      class="heading text-deep-blue text-[clamp(18px,1.67vw,24px)] leading-110 opacity-90 font-normal"
+                    >
+                      Electricity Plan Comparisons
+                    </span>
+                  </div>
+
+                  <span
+                    class="transition-transform duration-500 [input:checked~label_&]:rotate-180"
+                  >
+                    <svg
+                      width="15"
+                      height="9"
+                      viewBox="0 0 15 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.330173 0.344159C0.541647 0.123794 0.828428 3.62117e-08 1.12745 4.92825e-08C1.42648 6.23532e-08 1.71326 0.123794 1.92473 0.344159L7.50681 6.16269L13.0889 0.34416C13.3016 0.13004 13.5864 0.0115597 13.8821 0.014238C14.1778 0.0169162 14.4606 0.140538 14.6697 0.358478C14.8788 0.576418 14.9974 0.871238 15 1.17944C15.0025 1.48764 14.8889 1.78457 14.6834 2.00626L8.30409 8.65584C8.09261 8.87621 7.80583 9 7.50681 9C7.20778 9 6.921 8.87621 6.70953 8.65584L0.330173 2.00626C0.118763 1.78583 -6.49944e-08 1.4869 -5.137e-08 1.17521C-3.77456e-08 0.863519 0.118763 0.564591 0.330173 0.344159Z"
+                        fill="#00171F"
+                      />
+                    </svg>
+                  </span>
+                </label>
+
+                <div
+                  class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out peer-checked:grid-rows-[1fr]"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="para font-normal text-deep-blue opacity-90 text-base leading-160 pl-[80px] pt-3 pb-2"
+                    >
+                      Whether you want renewable energy, low rates, or flexible
+                      contracts, we'll help you find the best provider.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion w-full bg-white p-[14px] border border-solid border-border-color rounded shadow-custom group transition-all duration-500 ease-out"
+              >
+                <input
+                  type="checkbox"
+                  id="accordion-toggle-3"
+                  class="peer hidden"
+                />
+
+                <label
+                  for="accordion-toggle-3"
+                  class="flex items-center justify-between list-none cursor-pointer select-none"
+                >
+                  <div
+                    class="accordion-headers flex gap-[clamp(16px,1.67vw,24px)] items-center"
+                  >
+                    <div
+                      class="size-[clamp(40px,6.28vw,64px)] rounded-full bg-light-blue flex justify-center items-center transition-all duration-500 ease-out group-hover:bg-prussian-blue"
+                    >
+                      <svg
+                        width="30"
+                        height="30"
+                        viewBox="0 0 30 30"
+                        class="w-[clamp(22px,1.94vw,28px)] h-[clamp(24px,2.36vw,30px)]"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="transition-all duration-500 ease-out group-hover:fill-white"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M29.9998 15.4216C29.9998 13.0491 29.3861 10.8216 28.3111 8.88538C32.8936 -1.48712 23.3998 0.0316301 22.8711 0.13538C20.8598 0.52913 18.9998 1.16038 17.2836 1.96163C17.0288 1.94745 16.7737 1.94036 16.5186 1.94038C10.1123 1.94038 4.74982 6.40788 3.37732 12.3979C6.75482 8.61038 9.11732 7.08163 10.5323 6.47038C10.3073 6.67205 10.0857 6.8758 9.86732 7.08163L9.65482 7.28788C9.51065 7.42455 9.36815 7.56288 9.22732 7.70288L8.98232 7.95288C8.85732 8.07871 8.7344 8.20538 8.61357 8.33288L8.35857 8.60288C7.8619 9.1331 7.38249 9.67922 6.92107 10.2404C6.74803 10.449 6.57719 10.6594 6.40857 10.8716L6.15857 11.1879L5.92982 11.4879L5.67232 11.8279L5.49732 12.0691C4.98928 12.7625 4.50239 13.4712 4.03732 14.1941L4.03482 14.1979C3.91899 14.3787 3.80649 14.557 3.69732 14.7329L3.67982 14.7616C3.56982 14.9375 3.46357 15.1116 3.36107 15.2841L3.34982 15.3016C3.07232 15.7658 2.8169 16.2087 2.58357 16.6304C1.36982 18.8304 0.778571 20.3679 0.753571 20.4591C-3.08143 34.1666 8.88482 28.3779 10.5548 27.5141C12.4089 28.4297 14.4495 28.9045 16.5173 28.9016C22.3798 28.9016 27.3673 25.1604 29.2236 19.9354H22.1411C21.0923 21.7054 19.0748 22.9054 16.7561 22.9054C13.3598 22.9054 10.6061 20.3316 10.6061 17.1579H29.8886C29.9627 16.5887 29.9998 16.0108 29.9998 15.4216ZM27.4811 2.15538C28.6423 2.93913 29.5736 4.16788 27.9736 8.31288C26.4282 5.82674 24.118 3.90907 21.3898 2.84788C22.6373 2.24538 25.7273 0.97163 27.4811 2.15538ZM2.80982 27.4866C1.86357 26.5166 1.69732 24.1554 3.78357 19.8516C4.83416 22.8597 6.91299 25.4002 9.65357 27.0254C8.30357 27.7691 4.71607 29.4429 2.80982 27.4866ZM10.5748 13.4704C10.6823 10.3854 13.3686 7.91538 16.6673 7.91538C19.9673 7.91538 22.6511 10.3854 22.7598 13.4704H10.5748Z"
+                          fill="#007EA7"
+                        />
+                      </svg>
+                    </div>
+                    <span
+                      class="heading text-deep-blue text-[clamp(18px,1.67vw,24px)] leading-110 opacity-90 font-normal"
+                    >
+                      Internet Plan Comparisons
+                    </span>
+                  </div>
+
+                  <span
+                    class="transition-transform duration-500 [input:checked~label_&]:rotate-180"
+                  >
+                    <svg
+                      width="15"
+                      height="9"
+                      viewBox="0 0 15 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.330173 0.344159C0.541647 0.123794 0.828428 3.62117e-08 1.12745 4.92825e-08C1.42648 6.23532e-08 1.71326 0.123794 1.92473 0.344159L7.50681 6.16269L13.0889 0.34416C13.3016 0.13004 13.5864 0.0115597 13.8821 0.014238C14.1778 0.0169162 14.4606 0.140538 14.6697 0.358478C14.8788 0.576418 14.9974 0.871238 15 1.17944C15.0025 1.48764 14.8889 1.78457 14.6834 2.00626L8.30409 8.65584C8.09261 8.87621 7.80583 9 7.50681 9C7.20778 9 6.921 8.87621 6.70953 8.65584L0.330173 2.00626C0.118763 1.78583 -6.49944e-08 1.4869 -5.137e-08 1.17521C-3.77456e-08 0.863519 0.118763 0.564591 0.330173 0.344159Z"
+                        fill="#00171F"
+                      />
+                    </svg>
+                  </span>
+                </label>
+
+                <div
+                  class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out peer-checked:grid-rows-[1fr]"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="para font-normal text-deep-blue opacity-90 text-base leading-160 pl-[80px] pt-3 pb-2"
+                    >
+                      Whether you want renewable energy, low rates, or flexible
+                      contracts, we'll help you find the best provider.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="accordion w-full bg-white p-[14px] border border-solid border-border-color rounded shadow-custom group transition-all duration-500 ease-out"
+              >
+                <input
+                  type="checkbox"
+                  id="accordion-toggle-4"
+                  class="peer hidden"
+                />
+
+                <label
+                  for="accordion-toggle-4"
+                  class="flex items-center justify-between list-none cursor-pointer select-none"
+                >
+                  <div
+                    class="accordion-headers flex gap-[clamp(16px,1.67vw,24px)] items-center"
+                  >
+                    <div
+                      class="size-[clamp(40px,6.28vw,64px)] rounded-full bg-light-blue flex justify-center items-center transition-all duration-500 ease-out group-hover:bg-prussian-blue"
+                    >
+                      <svg
+                        width="32"
+                        height="32"
+                        viewBox="0 0 32 32"
+                        class="w-[clamp(24px,2.22vw,32px)] h-[clamp(24px,2.22vw,32px)]"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          class="transition-all duration-500 ease-out group-hover:fill-white"
+                          d="M31.8425 16.4179L28.3766 11.3129L31.8425 6.20793C32.0045 5.96444 32.0438 5.6605 31.9495 5.384C31.8543 5.10751 31.6364 4.89051 31.359 4.79901L20.0466 1.04904C19.6419 0.912602 19.2043 1.06641 18.9699 1.41797L16 5.87288L13.03 1.41797C12.7938 1.0646 12.3525 0.911664 11.9533 1.04904L0.640889 4.79901C0.363517 4.89057 0.145581 5.10757 0.0503942 5.384C-0.0439176 5.6605 -0.0045429 5.96444 0.157518 6.208L3.62337 11.313L0.157581 16.4179C-0.0044804 16.6614 -0.0438551 16.9654 0.0504567 17.2418C0.145643 17.5183 0.363579 17.7353 0.640952 17.8268L11.9534 21.5768C12.3515 21.7107 12.7944 21.5613 13.03 21.2079L16 16.753L18.97 21.2079C19.2059 21.5616 19.649 21.7106 20.0467 21.5768L31.3591 17.8268C31.6365 17.7353 31.8544 17.5183 31.9496 17.2418C32.0439 16.9654 32.0045 16.6614 31.8425 16.4179ZM16 14.0751L7.71365 11.313L16 8.55085L24.2864 11.313L16 14.0751Z"
+                          fill="#007EA7"
+                        />
+                        <path
+                          class="transition-all duration-500 ease-out group-hover:fill-white"
+                          d="M20.6397 23.3563C19.4597 23.7522 18.1256 23.3229 17.4098 22.2485L16 20.1338L14.59 22.2485C13.8755 23.3208 12.543 23.7541 11.3554 23.3545L3.8125 20.8403V26.3134C3.8125 26.7172 4.07069 27.0752 4.45337 27.2024L15.6978 30.9506C15.7317 30.9625 15.7655 30.9716 15.7994 30.979C15.7994 30.979 15.8003 30.979 15.8003 30.9799H15.8013C15.8672 30.9936 15.934 31.001 16 31.001C16.0705 31.001 16.14 30.9927 16.2096 30.9771C16.2407 30.9698 16.2709 30.9616 16.3012 30.9515L27.5465 27.2025C27.9291 27.0752 28.1873 26.7172 28.1873 26.3134V20.8405L20.6397 23.3563Z"
+                          fill="#007EA7"
+                        />
+                      </svg>
+                    </div>
+                    <span
+                      class="heading text-deep-blue text-[clamp(18px,1.67vw,24px)] leading-110 opacity-90 font-normal"
+                    >
+                      Bundle Packages
+                    </span>
+                  </div>
+
+                  <span
+                    class="transition-transform duration-500 [input:checked~label_&]:rotate-180"
+                  >
+                    <svg
+                      width="15"
+                      height="9"
+                      viewBox="0 0 15 9"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.330173 0.344159C0.541647 0.123794 0.828428 3.62117e-08 1.12745 4.92825e-08C1.42648 6.23532e-08 1.71326 0.123794 1.92473 0.344159L7.50681 6.16269L13.0889 0.34416C13.3016 0.13004 13.5864 0.0115597 13.8821 0.014238C14.1778 0.0169162 14.4606 0.140538 14.6697 0.358478C14.8788 0.576418 14.9974 0.871238 15 1.17944C15.0025 1.48764 14.8889 1.78457 14.6834 2.00626L8.30409 8.65584C8.09261 8.87621 7.80583 9 7.50681 9C7.20778 9 6.921 8.87621 6.70953 8.65584L0.330173 2.00626C0.118763 1.78583 -6.49944e-08 1.4869 -5.137e-08 1.17521C-3.77456e-08 0.863519 0.118763 0.564591 0.330173 0.344159Z"
+                        fill="#00171F"
+                      />
+                    </svg>
+                  </span>
+                </label>
+
+                <div
+                  class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out peer-checked:grid-rows-[1fr]"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="para font-normal text-deep-blue opacity-90 text-base leading-160 pl-[80px] pt-3 pb-2"
+                    >
+                      Whether you want renewable energy, low rates, or flexible
+                      contracts, we'll help you find the best provider.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right max-w-[558px] w-full">
+            <img
+              width="530"
+              height="535"
+              class="h-auto object-cover"
+              src="assets/images/baldy.webp"
+              alt="bald guy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="min-h-fit w-full px-4">
+      <div class="container max-w-[1140px] w-full mx-auto">
+        <div class="row pb-[60px] md:pb-[80px] lg:pb-[162px]">
+          <div
+            class="section-text w-full flex flex-col justify-center xl:items-center"
+          >
+            <h1
+              class="heading text-[clamp(32px,3.33vw,48px)] text-deep-blue font-normal leading-110"
+            >
+              Why Choose Us for
+              <span class="font-bold leading-110">Utilities</span>
+            </h1>
+            <p
+              class="para max-w-[620px] font-normal xl:text-center text-deep-blue leading-150 text-[clamp(14px,1.11vw,16px)] opacity-90 mt-4"
+            >
+              This emphasizes both the action and the benefits, drawing in
+              potential customers with a clear value proposition. Let me know if
+              you'd like any adjustments!
+            </p>
+          </div>
+
+          <div
+            class="cards mt-[clamp(40px,3.02vw,58px)] flex flex-col xl:flex-row gap-6"
+          >
+            <div class="left-card max-w-[424px] cursor-pointer">
+              <div class="card-content p-10 bg-prussian-blue rounded w-full">
+                <img
+                  width="277"
+                  height="278"
+                  class="max-h-[278px] object-contain"
+                  src="assets/images/like.webp"
+                  alt="like"
+                />
+
+                <h1
+                  class="card-heading text-white font-normal text-[clamp(16px,2vw,24px)] leading-110 mt-[clamp(20px,2.08vw,30px)]"
+                >
+                  Tailored Recommendations
+                </h1>
+
+                <p
+                  class="para leading-150 text-white font-normal text-[clamp(14px,1vw,16px)] mt-3"
+                >
+                  Our platform analyzes your unique energy needs and preferences
+                  to suggest the best utility providers, ensuring you get the
+                  most personalized options available.
+                </p>
+
+                <button
+                  class="cursor-pointer bg-white w-[64px] py-3 px-6 rounded-[446px] mt-6 flex items-center justify-start overflow-hidden"
+                >
+                  <svg
+                    width="16"
+                    height="28"
+                    viewBox="0 0 16 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14 14L2 14M9.63636 18L14 14L9.63636 10"
+                      stroke="#010101"
+                      stroke-width="1.8"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div
+              class="right-cards max-w-[692px] w-full grid gap-6 grid-cols-1 md:grid-cols-2"
+            >
+              <div
+                class="card-1 cursor-pointer h-auto md:h-[286px] max-w-[424px] xl:max-w-[334px] border border-solid transition-all duration-500 ease-in-out border-card-border rounded hover:shadow-card"
+              >
+                <div class="card-content p-6">
+                  <img
+                    width="60"
+                    height="60"
+                    class="object-cover"
+                    src="assets/images/stability.webp"
+                    alt="stability"
+                  />
+                  <h1
+                    class="heading text-black font-normal mt-[18px] leading-110 max-w-[286px] text-[24px]"
+                  >
+                    Simplified Comparison Process
+                  </h1>
+                  <p
+                    class="para font-normal leading-150 text-base mt-3 text-deep-blue"
+                  >
+                    Our intuitive platform lets you compare the best utility
+                    providers in one place, helping you make a quick and
+                    informed decision.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card-2 h-auto md:h-[286px] cursor-pointer max-w-[424px] xl:max-w-[334px] border border-solid transition-all duration-500 ease-in-out border-card-border rounded hover:shadow-card"
+              >
+                <div class="card-content p-6">
+                  <img
+                    width="60"
+                    height="60"
+                    class="object-cover"
+                    src="assets/images/working-time.webp"
+                    alt="time=money"
+                  />
+                  <h1
+                    class="heading text-black font-normal mt-[18px] leading-110 max-w-[286px] text-[24px]"
+                  >
+                    Save Time and Money
+                  </h1>
+                  <p
+                    class="para font-normal leading-150 text-base mt-3 text-deep-blue"
+                  >
+                    With up-to-date plans and pricing, you can be sure you’re
+                    getting the most competitive rates available.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card-3 h-auto md:h-[286px] cursor-pointer max-w-[424px] xl:max-w-[334px] border border-solid transition-all duration-500 ease-in-out border-card-border rounded hover:shadow-card"
+              >
+                <div class="card-content p-6">
+                  <img
+                    width="60"
+                    height="60"
+                    class="object-cover"
+                    src="assets/images/paper.webp"
+                    alt="document"
+                  />
+                  <h1
+                    class="heading text-black font-normal mt-[18px] leading-110 max-w-[286px] text-[24px]"
+                  >
+                    No Service Interruptions
+                  </h1>
+                  <p
+                    class="para font-normal leading-150 text-base mt-3 text-deep-blue"
+                  >
+                    We take care of the entire switching process so you can
+                    enjoy a hassle-free experience with zero downtime.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card-4 h-auto md:h-[286px] cursor-pointer max-w-[424px] xl:max-w-[334px] border border-solid transition-all duration-500 ease-in-out border-card-border rounded hover:shadow-card"
+              >
+                <div class="card-content p-6">
+                  <img
+                    width="60"
+                    height="60"
+                    class="object-cover"
+                    src="assets/images/costumer-service.webp"
+                    alt="customer service"
+                  />
+                  <h1
+                    class="heading text-black font-normal mt-[18px] leading-110 max-w-[286px] text-[24px]"
+                  >
+                    Comprehensive Support
+                  </h1>
+                  <p
+                    class="para font-normal leading-150 text-base mt-3 text-deep-blue"
+                  >
+                    Whether you need assistance selecting a plan or during the
+                    switch, our dedicated support team is here to help every
+                    step of the way.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="min-h-fit w-full px-4">
+      <div class="container max-w-[1284px] mx-auto w-full">
+        <div class="row pb-[60px] md:pb-[80px] lg:pb-[162px]">
+          <div
+            class="section-text flex flex-col justify-center xl:items-center"
+          >
+            <h1
+              class="heading leading-110 font-normal text-[clamp(32px,3.34vw,48px)]"
+            >
+              Our <span class="font-bold leading-110">Testimonials</span>
+            </h1>
+            <p
+              class="para max-w-[490px] text-[clamp(14px,1.11vw,16px)] text-deep-blue leading-150 xl:text-center mt-4 opacity-90"
+            >
+              Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget
+              consectetur mi. Vulputate sapien a a bibendum
+            </p>
+          </div>
+
+          <div class="scroll-cards mt-[clamp(24px,4.31vw,62px)]">
+            <div class="flex flex-wrap items-center justify-center gap-[32px]">
+              <div
+                onclick="moveLeft()"
+                class="left-button order-2 cursor-pointer group transition-all duration-500 ease-out xl:order-1"
+              >
+                <svg
+                  class="transition-all duration-500 ease-out group-hover:fill-deep-blue"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="39"
+                    height="39"
+                    rx="19.5"
+                    stroke="#00171F"
+                  />
+                  <path
+                    class="transition-all duration-500 ease-out group-hover:fill-white"
+                    d="M24.5198 10.9002C24.6643 11.0341 24.781 11.1952 24.8632 11.3742C24.9454 11.5533 24.9915 11.7467 24.9989 11.9436C25.0064 12.1405 24.9749 12.3369 24.9065 12.5216C24.838 12.7063 24.7338 12.8757 24.5998 13.0201L17.5461 20.5L24.5998 27.9799C24.7338 28.1244 24.838 28.2938 24.9064 28.4785C24.9749 28.6632 25.0063 28.8596 24.9989 29.0565C24.9915 29.2533 24.9453 29.4468 24.8631 29.6258C24.7809 29.8048 24.6643 29.9659 24.5198 30.0999C24.3754 30.2338 24.206 30.338 24.0213 30.4065C23.8365 30.4749 23.6402 30.5064 23.4433 30.4989C23.2464 30.4915 23.053 30.4454 22.874 30.3632C22.6949 30.281 22.5338 30.1643 22.3999 30.0199L14.4002 21.52C14.1429 21.2426 14 20.8783 14 20.5C14 20.1217 14.1429 19.7574 14.4002 19.48L22.3999 10.9802C22.5338 10.8357 22.6949 10.719 22.8739 10.6368C23.053 10.5546 23.2464 10.5085 23.4433 10.5011C23.6402 10.4936 23.8365 10.5251 24.0213 10.5935C24.206 10.662 24.3754 10.7662 24.5198 10.9002Z"
+                    fill="#00171F"
+                  />
+                </svg>
+              </div>
+
+              <div
+                class="order-1 w-full overflow-hidden xl:order-2 xl:w-[1140px]"
+              >
+                <div id="cards" class="cards flex shrink-0 gap-[24px]">
+                  <div
+                    class="card w-[calc(100vw-32px)] shrink-0 max-w-[364px] rounded border border-solid border-border-color bg-white shadow-card"
+                  >
+                    <div class="card-content p-5">
+                      <div class="user-info flex gap-2">
+                        <img
+                          width="60"
+                          height="60"
+                          class="object-cover"
+                          src="assets/images/user-1.webp"
+                          alt="user"
+                        />
+                        <div class="user-text">
+                          <h1
+                            class="heading text-[clamp(18px,1.67vw,24px)] text-black leading-150 font-normal"
+                          >
+                            Cameron
+                          </h1>
+                          <p
+                            class="para text-black opacity-50 text-[clamp(14px,1.11vw,16px)] leading-150 font-normal"
+                          >
+                            @cameron
+                          </p>
+                        </div>
+                      </div>
+                      <img
+                        width="99"
+                        height="18"
+                        class="mt-6"
+                        src="assets/images/5star.webp"
+                        alt="stars"
+                      />
+                      <p
+                        class="card-para text-deep-blue opacity-90 font-normal leading-150 text-[clamp(14px,1.11vw,16px)] mt-[18px]"
+                      >
+                        Lorem adipis cing elit ipsum dolor sit amet, consectetur
+                        adipis cing elit. Vivamus lacinia odio adipiscing elit
+                        vitae vestibulum vestibulum.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="card w-[calc(100vw-32px)] shrink-0 max-w-[364px] rounded border border-solid border-border-color bg-white shadow-card"
+                  >
+                    <div class="card-content p-5">
+                      <div class="user-info flex gap-2">
+                        <img
+                          width="60"
+                          height="60"
+                          class="object-cover"
+                          src="assets/images/user-2.webp"
+                          alt="user"
+                        />
+                        <div class="user-text">
+                          <h1
+                            class="heading text-[clamp(18px,1.67vw,24px)] text-black leading-150 font-normal"
+                          >
+                            Ronald
+                          </h1>
+                          <p
+                            class="para text-black opacity-50 text-[clamp(14px,1.11vw,16px)] leading-150 font-normal"
+                          >
+                            @ronald
+                          </p>
+                        </div>
+                      </div>
+                      <img
+                        width="99"
+                        height="18"
+                        class="mt-6"
+                        src="assets/images/5star.webp"
+                        alt="stars"
+                      />
+                      <p
+                        class="card-para text-deep-blue opacity-90 font-normal leading-150 text-[clamp(14px,1.11vw,16px)] mt-[18px]"
+                      >
+                        Lorem adipis cing elit ipsum dolor sit amet, consectetur
+                        adipis cing elit. Vivamus lacinia odio adipiscing elit
+                        vitae vestibulum vestibulum.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="card w-[calc(100vw-32px)] shrink-0 max-w-[364px] rounded border border-solid border-border-color bg-white shadow-card"
+                  >
+                    <div class="card-content p-5">
+                      <div class="user-info flex gap-2">
+                        <img
+                          width="60"
+                          height="60"
+                          class="object-cover"
+                          src="assets/images/user-3.webp"
+                          alt="user"
+                        />
+                        <div class="user-text">
+                          <h1
+                            class="heading text-[clamp(18px,1.67vw,24px)] text-black leading-150 font-normal"
+                          >
+                            Jay Shah
+                          </h1>
+                          <p
+                            class="para text-black opacity-50 text-[clamp(14px,1.11vw,16px)] leading-150 font-normal"
+                          >
+                            @jayshah
+                          </p>
+                        </div>
+                      </div>
+                      <img
+                        width="99"
+                        height="18"
+                        class="mt-6"
+                        src="assets/images/5star.webp"
+                        alt="stars"
+                      />
+                      <p
+                        class="card-para text-deep-blue opacity-90 font-normal leading-150 text-[clamp(14px,1.11vw,16px)] mt-[18px]"
+                      >
+                        Lorem adipis cing elit ipsum dolor sit amet, consectetur
+                        adipis cing elit. Vivamus lacinia odio adipiscing elit
+                        vitae vestibulum vestibulum.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                onclick="moveRight()"
+                class="right-button order-3 cursor-pointer group xl:order-3"
+              >
+                <svg
+                  class="transition-all ease-in-out duration-500 group-hover:fill-deep-blue"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="39"
+                    height="39"
+                    rx="19.5"
+                    stroke="#00171F"
+                  />
+                  <path
+                    class="transition-all duration-500 ease-in-out group-hover:fill-white"
+                    d="M15.4802 10.9002C15.3357 11.0341 15.219 11.1952 15.1368 11.3742C15.0546 11.5533 15.0085 11.7467 15.0011 11.9436C14.9936 12.1405 15.0251 12.3369 15.0935 12.5216C15.162 12.7063 15.2662 12.8757 15.4002 13.0201L22.4539 20.5L15.4002 27.9799C15.2662 28.1244 15.162 28.2938 15.0936 28.4785C15.0251 28.6632 14.9937 28.8596 15.0011 29.0565C15.0085 29.2533 15.0547 29.4468 15.1369 29.6258C15.2191 29.8048 15.3357 29.9659 15.4802 30.0999C15.6246 30.2338 15.794 30.338 15.9787 30.4065C16.1635 30.4749 16.3598 30.5064 16.5567 30.4989C16.7536 30.4915 16.947 30.4454 17.126 30.3632C17.3051 30.281 17.4662 30.1643 17.6001 30.0199L25.5998 21.52C25.8571 21.2426 26 20.8783 26 20.5C26 20.1217 25.8571 19.7574 25.5998 19.48L17.6001 10.9802C17.4662 10.8357 17.3051 10.719 17.1261 10.6368C16.947 10.5546 16.7536 10.5085 16.5567 10.5011C16.3598 10.4936 16.1635 10.5251 15.9787 10.5935C15.794 10.662 15.6246 10.7662 15.4802 10.9002Z"
+                    fill="#00171F"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="min-h-fit px-4">
+      <div class="container max-w-[916px] mx-auto w-full">
+        <div class="row w-full pb-[60px] md:pb-[80px] lg:pb-[162px]">
+          <div
+            class="section-text flex flex-col xl:items-center justify-center"
+          >
+            <h1
+              class="heading text-deep-blue leading-110 text-[clamp(32px,3.34vw,48px)] font-normal"
+            >
+              Frequently Asked
+              <span class="leading-110 font-bold">Questions</span>
+            </h1>
+            <p
+              class="para max-w-[556px] text-deep-blue opacity-90 font-normal leading-150 mt-4 xl:text-center"
+            >
+              Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget
+              consectetur mi. Vulputate sapien a a bibendum
+            </p>
+          </div>
+
+          <div
+            class="accordions-bottom flex flex-col gap-[clamp(18px,2.75vw,28px)] mt-[clamp(18px,5.1vw,52px)]"
+          >
+            <div
+              class="accordion w-full bg-white py-[clamp(18px,2.55vw,26px)] shadow-accordion rounded px-[clamp(18px,2.35vw,24px)] group transition-all duration-500 ease-in-out hover:bg-prussian-blue"
+            >
+              <button
+                type="button"
+                class="accordion-toggle w-full flex items-center justify-between list-none cursor-pointer select-none text-left"
+              >
+                <span
+                  class="heading text-[clamp(18px,2.35vw,24px)] transition-all duration-500 ease-in-out group-hover:text-white text-deep-blue leading-110 font-semibold"
+                >
+                  Can I switch providers if I’m currently in a contract?
+                </span>
+
+                <span
+                  class="accordion-icon transition-transform duration-500 ease-in-out"
+                >
+                  <span class="accordion-plus">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="14"
+                        cy="14"
+                        r="13"
+                        stroke="#00171F"
+                        stroke-width="2"
+                        class="transition-all duration-500 group-hover:stroke-[#FEFEFE]"
+                      />
+                      <rect
+                        x="8.13672"
+                        y="14.7725"
+                        width="1.54545"
+                        height="11.7273"
+                        transform="rotate(-90 8.13672 14.7725)"
+                        fill="#00171F"
+                        stroke="#00171F"
+                        class="transition-all duration-500 group-hover:fill-[#FEFEFE] group-hover:stroke-[#FEFEFE]"
+                      />
+                      <rect
+                        x="13.2275"
+                        y="8.13574"
+                        width="1.54545"
+                        height="11.7273"
+                        fill="#00171F"
+                        stroke="#00171F"
+                        class="transition-all duration-500 group-hover:fill-[#FEFEFE] group-hover:stroke-[#FEFEFE]"
+                      />
+                    </svg>
+                  </span>
+
+                  <span class="accordion-minus hidden">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="14"
+                        cy="14"
+                        r="13"
+                        stroke="#00171F"
+                        stroke-width="2"
+                        class="transition-all duration-500 group-hover:stroke-[#FEFEFE]"
+                      />
+                      <rect
+                        x="7.63672"
+                        y="15.2725"
+                        width="2.54545"
+                        height="12.7273"
+                        transform="rotate(-90 7.63672 15.2723)"
+                        fill="#00171F"
+                        class="transition-all duration-500 group-hover:fill-[#FEFEFE]"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+
+              <div
+                class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="para text-deep-blue transition-all pt-[14px] duration-500 ease-in-out group-hover:text-white opacity-90"
+                  >
+                    Yes, but some contracts may include exit fees. We can guide
+                    you through the terms of your current plan and help you
+                    determine if switching now makes sense for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion w-full bg-white py-[clamp(18px,2.55vw,26px)] shadow-accordion rounded px-[clamp(18px,2.35vw,24px)] group transition-all duration-500 ease-in-out hover:bg-prussian-blue"
+            >
+              <button
+                type="button"
+                class="accordion-toggle w-full flex items-center justify-between list-none cursor-pointer select-none text-left"
+              >
+                <span
+                  class="heading text-[clamp(18px,2.35vw,24px)] transition-all duration-500 ease-in-out group-hover:text-white text-deep-blue leading-110 font-semibold"
+                >
+                  Will my service be interrupted if I switch providers?
+                </span>
+
+                <span
+                  class="accordion-icon transition-transform duration-500 ease-in-out"
+                >
+                  <span class="accordion-plus">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="14"
+                        cy="14"
+                        r="13"
+                        stroke="#00171F"
+                        stroke-width="2"
+                        class="transition-all duration-500 group-hover:stroke-[#FEFEFE]"
+                      />
+                      <rect
+                        x="8.13672"
+                        y="14.7725"
+                        width="1.54545"
+                        height="11.7273"
+                        transform="rotate(-90 8.13672 14.7725)"
+                        fill="#00171F"
+                        stroke="#00171F"
+                        class="transition-all duration-500 group-hover:fill-[#FEFEFE] group-hover:stroke-[#FEFEFE]"
+                      />
+                      <rect
+                        x="13.2275"
+                        y="8.13574"
+                        width="1.54545"
+                        height="11.7273"
+                        fill="#00171F"
+                        stroke="#00171F"
+                        class="transition-all duration-500 group-hover:fill-[#FEFEFE] group-hover:stroke-[#FEFEFE]"
+                      />
+                    </svg>
+                  </span>
+
+                  <span class="accordion-minus hidden">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="14"
+                        cy="14"
+                        r="13"
+                        stroke="#00171F"
+                        stroke-width="2"
+                        class="transition-all duration-500 group-hover:stroke-[#FEFEFE]"
+                      />
+                      <rect
+                        x="7.63672"
+                        y="15.2725"
+                        width="2.54545"
+                        height="12.7273"
+                        transform="rotate(-90 7.63672 15.2723)"
+                        fill="#00171F"
+                        class="transition-all duration-500 group-hover:fill-[#FEFEFE]"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+
+              <div
+                class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="para text-deep-blue transition-all pt-[14px] duration-500 ease-in-out group-hover:text-white opacity-90"
+                  >
+                    Yes, but some contracts may include exit fees. We can guide
+                    you through the terms of your current plan and help you
+                    determine if switching now makes sense for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion w-full bg-white py-[clamp(18px,2.55vw,26px)] shadow-accordion rounded px-[clamp(18px,2.35vw,24px)] group transition-all duration-500 ease-in-out hover:bg-prussian-blue"
+            >
+              <button
+                type="button"
+                class="accordion-toggle w-full flex items-center justify-between list-none cursor-pointer select-none text-left"
+              >
+                <span
+                  class="heading text-[clamp(18px,2.35vw,24px)] transition-all duration-500 ease-in-out group-hover:text-white text-deep-blue leading-110 font-semibold"
+                >
+                  How long does it take to switch providers?
+                </span>
+
+                <span
+                  class="accordion-icon transition-transform duration-500 ease-in-out"
+                >
+                  <span class="accordion-plus">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="14"
+                        cy="14"
+                        r="13"
+                        stroke="#00171F"
+                        stroke-width="2"
+                        class="transition-all duration-500 group-hover:stroke-[#FEFEFE]"
+                      />
+                      <rect
+                        x="8.13672"
+                        y="14.7725"
+                        width="1.54545"
+                        height="11.7273"
+                        transform="rotate(-90 8.13672 14.7725)"
+                        fill="#00171F"
+                        stroke="#00171F"
+                        class="transition-all duration-500 group-hover:fill-[#FEFEFE] group-hover:stroke-[#FEFEFE]"
+                      />
+                      <rect
+                        x="13.2275"
+                        y="8.13574"
+                        width="1.54545"
+                        height="11.7273"
+                        fill="#00171F"
+                        stroke="#00171F"
+                        class="transition-all duration-500 group-hover:fill-[#FEFEFE] group-hover:stroke-[#FEFEFE]"
+                      />
+                    </svg>
+                  </span>
+
+                  <span class="accordion-minus hidden">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="14"
+                        cy="14"
+                        r="13"
+                        stroke="#00171F"
+                        stroke-width="2"
+                        class="transition-all duration-500 group-hover:stroke-[#FEFEFE]"
+                      />
+                      <rect
+                        x="7.63672"
+                        y="15.2725"
+                        width="2.54545"
+                        height="12.7273"
+                        transform="rotate(-90 7.63672 15.2723)"
+                        fill="#00171F"
+                        class="transition-all duration-500 group-hover:fill-[#FEFEFE]"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+
+              <div
+                class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="para text-deep-blue transition-all pt-[14px] duration-500 ease-in-out group-hover:text-white opacity-90"
+                  >
+                    Yes, but some contracts may include exit fees. We can guide
+                    you through the terms of your current plan and help you
+                    determine if switching now makes sense for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="accordion w-full bg-white py-[clamp(18px,2.55vw,26px)] shadow-accordion rounded px-[clamp(18px,2.35vw,24px)] group transition-all duration-500 ease-in-out hover:bg-prussian-blue"
+            >
+              <button
+                type="button"
+                class="accordion-toggle w-full flex items-center justify-between list-none cursor-pointer select-none text-left"
+              >
+                <span
+                  class="heading text-[clamp(18px,2.35vw,24px)] transition-all duration-500 ease-in-out group-hover:text-white text-deep-blue leading-110 font-semibold"
+                >
+                  Is there a fee for switching providers?
+                </span>
+
+                <span
+                  class="accordion-icon transition-transform duration-500 ease-in-out"
+                >
+                  <span class="accordion-plus">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="14"
+                        cy="14"
+                        r="13"
+                        stroke="#00171F"
+                        stroke-width="2"
+                        class="transition-all duration-500 group-hover:stroke-[#FEFEFE]"
+                      />
+                      <rect
+                        x="8.13672"
+                        y="14.7725"
+                        width="1.54545"
+                        height="11.7273"
+                        transform="rotate(-90 8.13672 14.7725)"
+                        fill="#00171F"
+                        stroke="#00171F"
+                        class="transition-all duration-500 group-hover:fill-[#FEFEFE] group-hover:stroke-[#FEFEFE]"
+                      />
+                      <rect
+                        x="13.2275"
+                        y="8.13574"
+                        width="1.54545"
+                        height="11.7273"
+                        fill="#00171F"
+                        stroke="#00171F"
+                        class="transition-all duration-500 group-hover:fill-[#FEFEFE] group-hover:stroke-[#FEFEFE]"
+                      />
+                    </svg>
+                  </span>
+
+                  <span class="accordion-minus hidden">
+                    <svg
+                      width="28"
+                      height="28"
+                      viewBox="0 0 28 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="14"
+                        cy="14"
+                        r="13"
+                        stroke="#00171F"
+                        stroke-width="2"
+                        class="transition-all duration-500 group-hover:stroke-[#FEFEFE]"
+                      />
+                      <rect
+                        x="7.63672"
+                        y="15.2725"
+                        width="2.54545"
+                        height="12.7273"
+                        transform="rotate(-90 7.63672 15.2723)"
+                        fill="#00171F"
+                        class="transition-all duration-500 group-hover:fill-[#FEFEFE]"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </button>
+
+              <div
+                class="accordion-content grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="para text-deep-blue transition-all pt-[14px] duration-500 ease-in-out group-hover:text-white opacity-90"
+                  >
+                    Yes, but some contracts may include exit fees. We can guide
+                    you through the terms of your current plan and help you
+                    determine if switching now makes sense for you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="news-parent relative px-4 z-20 -mb-[165px]">
+      <div
+        class="newsletter max-w-[1140px] mx-auto min-h-fit bg-[url('assets/images/Newsletter.webp')] bg-cover bg-center bg-no-repeat rounded"
+      >
+        <div
+          class="content flex flex-col py-[clamp(18px,5.3vw,54px)] items-center justify-center px-4 sm:px-0"
+        >
+          <h1
+            class="heading text-center font-normal text-[clamp(32px,3.34vw,48px)] leading-110 text-deep-blue"
+          >
+            Join Our <span class="font-bold">Newsletter</span>
+          </h1>
+          <p
+            class="para max-w-[620px] text-center font-normal text-deep-blue opacity-90 leading-150 mt-4 text-base"
+          >
+            Stay up to date with the latest deals, energy-saving tips, and
+            exclusive offers! Sign up for our newsletter and never miss out on
+            great savings opportunities again.
+          </p>
+          <div
+            class="part max-w-[476px] w-full bg-white mt-[clamp(24px,3.73vw,38px)] py-[9px] pr-[9px] pl-[22px] items-center flex gap-5 border border-solid border-light rounded-tr-[100px] rounded-br-[100px] rounded-bl-[70px]"
+          >
+            <input
+              type="email"
+              required
+              class="text-deep-blue font-normal leading-110 outline-none text-nowrap w-full opacity-50"
+              name="address"
+              id="address"
+              placeholder="Enter your email"
+            />
+            <button
+              type="submit"
+              class="sumbit-btn cursor-pointer group overflow-hidden relative flex w-full max-w-[122px] items-center gap-[3px] rounded-br-[50px] font-bold rounded-bl-[50px] rounded-tr-[50px] bg-crisp-blue px-5 py-3 text-white"
+            >
+              Submit
+
+              <span
+                class="relative z-10 transition-transform duration-300 ease-out group-hover:translate-x-[30px] group-hover:-translate-y-[30px]"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 19L19 6M6.52 6H19V18.48"
+                    stroke="white"
+                    stroke-width="1.93338"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="footer min-h-fit bg-[url(assets/images/Footer.webp)] bg-center bg-no-repeat bg-cover px-4"
+    >
+      <div class="container max-w-[1140px] mx-auto w-full">
+        <div class="content pt-[232px] flex flex-wrap justify-between gap-5">
+          <div class="left max-w-[297px] w-full">
+            <div class="logo max-w-[223px]">
+              <img
+                width="223"
+                height="84"
+                class="object-cover"
+                src="assets/images/logo.webp"
+                alt=""
+              />
+            </div>
+            <p
+              class="para mt-[28px] text-white opacity-90 font-normal text-base leading-150"
+            >
+              Ut auctor nisi mauris eu tincidunt facilisi. Diam amet
+              sollicitudin pretium maecenas ornare lacus arcu adipiscing.
+            </p>
+            <div class="follow max-w-[180px]">
+              <h1
+                class="heading mt-[clamp(24px,3.53vw,36px)] font-bold text-xl text-white leading-100"
+              >
+                Follow Us
+              </h1>
+              <div class="socials flex gap-[15px] mt-4">
+                <div
+                  class="linked-in transition-all duration-300 ease-in-out hover:-translate-y-1"
+                >
+                  <a target="_blank" href="https://in.linkedin.com/">
+                    <svg
+                      width="34"
+                      height="34"
+                      viewBox="0 0 34 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.4187"
+                        y="0.4187"
+                        width="32.6586"
+                        height="32.6586"
+                        rx="16.3293"
+                        stroke="#FCFCFC"
+                        stroke-width="0.8374"
+                      />
+                      <path
+                        d="M12.5098 10.8866C12.5095 11.3308 12.3329 11.7567 12.0186 12.0706C11.7044 12.3845 11.2783 12.5608 10.8341 12.5605C10.3899 12.5603 9.96403 12.3836 9.6501 12.0694C9.33617 11.7552 9.15993 11.3291 9.16016 10.8849C9.16038 10.4407 9.33704 10.0148 9.65129 9.70088C9.96553 9.38695 10.3916 9.21072 10.8358 9.21094C11.28 9.21116 11.7059 9.38782 12.0198 9.70207C12.3337 10.0163 12.51 10.4424 12.5098 10.8866ZM12.56 13.8007H9.2104V24.285H12.56V13.8007ZM17.8524 13.8007H14.5195V24.285H17.8189V18.7833C17.8189 15.7184 21.8133 15.4337 21.8133 18.7833V24.285H25.121V17.6444C25.121 12.4776 19.209 12.6702 17.8189 15.2076L17.8524 13.8007Z"
+                        fill="#FCFCFC"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="insta transition-all duration-300 ease-in-out hover:-translate-y-1"
+                >
+                  <a target="_blank" href="https://instagram.com/">
+                    <svg
+                      width="34"
+                      height="34"
+                      viewBox="0 0 34 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.4187"
+                        y="0.4187"
+                        width="32.6586"
+                        height="32.6586"
+                        rx="16.3293"
+                        stroke="#FCFCFC"
+                        stroke-width="0.8374"
+                      />
+                      <path
+                        d="M17.6084 8.37505C18.2194 8.37271 18.8305 8.37885 19.4414 8.39348L19.6039 8.39934C19.7915 8.40604 19.9765 8.41441 20.2001 8.42446C21.0911 8.46633 21.6991 8.60701 22.2325 8.81385C22.7852 9.02655 23.2508 9.31462 23.7164 9.78021C24.1421 10.1986 24.4716 10.7047 24.6819 11.2632C24.8887 11.7967 25.0294 12.4055 25.0713 13.2965C25.0813 13.5192 25.0897 13.7051 25.0964 13.8927L25.1014 14.0551C25.1163 14.6658 25.1227 15.2766 25.1207 15.8874L25.1215 16.5121V17.6091C25.1236 18.2201 25.1172 18.8312 25.1023 19.4421L25.0972 19.6046C25.0905 19.7922 25.0822 19.9772 25.0721 20.2008C25.0302 21.0918 24.8879 21.6998 24.6819 22.2332C24.4722 22.7924 24.1427 23.2989 23.7164 23.7171C23.2976 24.1427 22.7913 24.4722 22.2325 24.6826C21.6991 24.8894 21.0911 25.0301 20.2001 25.072C19.9765 25.082 19.7915 25.0904 19.6039 25.0971L19.4414 25.1021C18.8305 25.117 18.2195 25.1234 17.6084 25.1214L16.9837 25.1222H15.8875C15.2764 25.1243 14.6654 25.1178 14.0544 25.1029L13.892 25.0979C13.6932 25.0907 13.4945 25.0823 13.2958 25.0728C12.4048 25.0309 11.7968 24.8886 11.2626 24.6826C10.7037 24.4727 10.1976 24.1431 9.77952 23.7171C9.35333 23.2986 9.02354 22.7922 8.81316 22.2332C8.60633 21.6998 8.46564 21.0918 8.42377 20.2008C8.41445 20.0021 8.40607 19.8034 8.39865 19.6046L8.39447 19.4421C8.37903 18.8312 8.37205 18.2201 8.37353 17.6091V15.8874C8.37119 15.2766 8.37733 14.6658 8.39195 14.0551L8.39781 13.8927C8.40451 13.7051 8.41289 13.5192 8.42294 13.2965C8.46481 12.4046 8.60549 11.7975 8.81233 11.2632C9.02283 10.7044 9.35326 10.1984 9.78036 9.78105C10.1981 9.3546 10.704 9.02452 11.2626 8.81385C11.7968 8.60701 12.4039 8.46633 13.2958 8.42446L13.892 8.39934L14.0544 8.39515C14.6651 8.37972 15.2759 8.37274 15.8867 8.37422L17.6084 8.37505ZM16.7475 12.5621C16.1928 12.5542 15.642 12.6567 15.1271 12.8636C14.6123 13.0704 14.1438 13.3776 13.7487 13.7671C13.3536 14.1567 13.0399 14.6208 12.8257 15.1327C12.6116 15.6445 12.5013 16.1938 12.5013 16.7486C12.5013 17.3035 12.6116 17.8528 12.8257 18.3646C13.0399 18.8764 13.3536 19.3406 13.7487 19.7301C14.1438 20.1197 14.6123 20.4268 15.1271 20.6337C15.642 20.8406 16.1928 20.9431 16.7475 20.9352C17.858 20.9352 18.923 20.4941 19.7082 19.7089C20.4934 18.9237 20.9345 17.8587 20.9345 16.7482C20.9345 15.6378 20.4934 14.5728 19.7082 13.7876C18.923 13.0023 17.858 12.5621 16.7475 12.5621ZM16.7475 14.2369C17.0812 14.2307 17.4128 14.2911 17.7229 14.4146C18.033 14.538 18.3154 14.722 18.5536 14.9558C18.7918 15.1896 18.981 15.4685 19.1102 15.7763C19.2394 16.084 19.3059 16.4144 19.306 16.7482C19.3061 17.082 19.2396 17.4124 19.1105 17.7202C18.9814 18.028 18.7923 18.307 18.5542 18.5409C18.3161 18.7747 18.0338 18.9588 17.7237 19.0824C17.4136 19.2059 17.0821 19.2664 16.7484 19.2604C16.0821 19.2604 15.4431 18.9957 14.972 18.5246C14.5008 18.0535 14.2362 17.4145 14.2362 16.7482C14.2362 16.0819 14.5008 15.4429 14.972 14.9718C15.4431 14.5007 16.0821 14.236 16.7484 14.236L16.7475 14.2369ZM21.1439 11.306C20.8737 11.3168 20.6182 11.4317 20.4309 11.6267C20.2436 11.8216 20.139 12.0815 20.139 12.3519C20.139 12.6222 20.2436 12.8821 20.4309 13.0771C20.6182 13.272 20.8737 13.387 21.1439 13.3978C21.4215 13.3978 21.6877 13.2875 21.884 13.0912C22.0803 12.8949 22.1906 12.6286 22.1906 12.351C22.1906 12.0734 22.0803 11.8072 21.884 11.6109C21.6877 11.4146 21.4215 11.3043 21.1439 11.3043V11.306Z"
+                        fill="#FCFCFC"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="fb transition-all duration-300 ease-in-out hover:-translate-y-1"
+                >
+                  <a target="_blank" href="https://facebook.com/">
+                    <svg
+                      width="34"
+                      height="34"
+                      viewBox="0 0 34 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.4187"
+                        y="0.4187"
+                        width="32.6586"
+                        height="32.6586"
+                        rx="16.3293"
+                        stroke="#FCFCFC"
+                        stroke-width="0.8374"
+                      />
+                      <path
+                        d="M18.4223 18.0041H20.5158L21.3532 14.6545H18.4223V12.9797C18.4223 12.1172 18.4223 11.3049 20.0971 11.3049H21.3532V8.49126C21.0802 8.45525 20.0494 8.37402 18.9608 8.37402C16.6873 8.37402 15.0727 9.76159 15.0727 12.3098V14.6545H12.5605V18.0041H15.0727V25.122H18.4223V18.0041Z"
+                        fill="#FCFCFC"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="twitter transition-all duration-300 ease-in-out hover:-translate-y-1"
+                >
+                  <a target="_blank" href="https://x.com/">
+                    <svg
+                      width="34"
+                      height="34"
+                      viewBox="0 0 34 34"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        x="0.4187"
+                        y="0.4187"
+                        width="32.6586"
+                        height="32.6586"
+                        rx="16.3293"
+                        stroke="#FCFCFC"
+                        stroke-width="0.8374"
+                      />
+                      <g clip-path="url(#clip0_83479_2953)">
+                        <path
+                          d="M22.5261 7.64062H25.6085L18.8758 15.3556L26.7968 25.8541H20.5954L15.7381 19.4856L10.1799 25.8541H7.09615L14.2974 17.6015L6.69922 7.64062H13.0588L17.4489 13.4601L22.5261 7.64062ZM21.4458 24.0051H23.1541L12.1293 9.39288H10.2979L21.4458 24.0051Z"
+                          fill="#FCFCFC"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_83479_2953">
+                          <rect
+                            width="20.0976"
+                            height="20.0976"
+                            fill="white"
+                            transform="translate(6.69922 6.69922)"
+                          />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="right max-w-[312px] flex flex-row gap-[clamp(24px,7.65vw,78px)]"
+          >
+            <ul class="max-w-[103px]">
+              <li class="head-item">
+                <a
+                  class="font-bold text-[clamp(18px,1.57vw,20px)] text-white leading-150"
+                  href=""
+                  >Quick Link</a
+                >
+              </li>
+              <div class="items mt-3 flex flex-col gap-[14px]">
+                <li>
+                  <a
+                    class="text-base leading-100 font-normal text-white opacity-90 relative after:absolute after:left-0 after:-bottom-1 after:opacity-90 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    href=""
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-base leading-100 font-normal text-white opacity-90 relative after:absolute after:left-0 after:-bottom-1 after:opacity-90 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    href=""
+                  >
+                    How It Works
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-base leading-100 font-normal text-white opacity-90 relative after:absolute after:left-0 after:-bottom-1 after:opacity-90 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    href=""
+                  >
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-base leading-100 font-normal text-white opacity-90 relative after:absolute after:left-0 after:-bottom-1 after:opacity-90 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    href=""
+                  >
+                    Testimonials
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-base leading-100 font-normal text-white opacity-90 relative after:absolute after:left-0 after:-bottom-1 after:opacity-90 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    href=""
+                  >
+                    Why Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-base leading-100 font-normal text-white opacity-90 relative after:absolute after:left-0 after:-bottom-1 after:opacity-90 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    href=""
+                  >
+                    FAQ
+                  </a>
+                </li>
+              </div>
+            </ul>
+            <ul class="max-w-[103px]">
+              <li class="head-item">
+                <a
+                  class="font-bold text-[clamp(18px,1.57vw,20px)] text-white leading-150"
+                  href=""
+                  >Services</a
+                >
+              </li>
+              <div class="items mt-3 flex flex-col gap-[14px]">
+                <li>
+                  <a
+                    class="text-base leading-100 font-normal text-white opacity-90 relative after:absolute after:left-0 after:-bottom-1 after:opacity-90 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    href=""
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-base leading-100 font-normal text-white opacity-90 relative after:absolute after:left-0 after:-bottom-1 after:opacity-90 after:w-0 after:h-[2px] after:bg-white after:transition-all after:duration-300 hover:after:w-full"
+                    href=""
+                  >
+                    Terms of Services
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright mt-[clamp(24px,5.49vw,56px)]">
+          <h1
+            class="text py-[20px] font-normal text-center text-white opacity-90 leading-150"
+          >
+            © 2024 BILL CENTRAL, Inc. All Rights Reserved.
+          </h1>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

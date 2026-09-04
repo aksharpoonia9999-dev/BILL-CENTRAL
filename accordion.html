@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="accordion w-full bg-white p-[14px] border border-solid border-border-color rounded shadow-custom group transition-all duration-500 ease-out"
+    >
+      <input type="checkbox" id="accordion-toggle-1" class="peer hidden" />
+
+      <label
+        for="accordion-toggle-1"
+        class="flex items-start justify-between list-none cursor-pointer select-none"
+      >
+        <div
+          class="accordion-headers flex gap-[clamp(16px,1.67vw,24px)] items-center"
+        >
+          <div
+            class="size-16 rounded-full bg-light-blue flex justify-center items-center transition-all duration-500 ease-out group-hover:bg-prussian-blue"
+          >
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.0123 12.7354C12.4622 12.7354 12.0146 13.1829 12.0146 13.733C12.0146 14.2831 12.4622 14.7307 13.0123 14.7307H14.01V13.733C14.01 13.1829 13.5624 12.7354 13.0123 12.7354Z"
+                fill="#007EA7"
+              />
+              <path
+                d="M20.9879 12.7354C20.4377 12.7354 19.9902 13.1829 19.9902 13.733V14.7307H20.9879C21.5379 14.7307 21.9855 14.2831 21.9855 13.733C21.9855 13.1829 21.538 12.7354 20.9879 12.7354Z"
+                fill="#007EA7"
+              />
+              <path
+                d="M17.9984 16.7227H16.0029V25.3614H17.9984V16.7227Z"
+                fill="#007EA7"
+              />
+              <path
+                d="M23.8554 31.6738H10.1445V34H23.8554V31.6738Z"
+                fill="#007EA7"
+              />
+              <path
+                d="M25.0579 3.41425C23.0265 1.31648 20.3033 0.106423 17.3898 0.00681343C14.3331 -0.0975772 11.4397 1.00052 9.24298 3.09889C7.04912 5.19467 5.8214 8.02995 5.78594 11.0825C5.75692 13.5814 6.53275 15.9547 8.02934 17.9461C9.44685 19.8323 10.1201 22.1926 10.1438 25.3619H14.0106V16.7233H13.0129C11.3643 16.7233 10.023 15.382 10.023 13.7334C10.023 12.0848 11.3643 10.7436 13.0129 10.7436C14.6615 10.7436 16.0027 12.0848 16.0027 13.7334V14.7311H17.9981V13.7334C17.9981 12.0848 19.3393 10.7436 20.9879 10.7436C22.6365 10.7436 23.9778 12.0848 23.9778 13.7334C23.9778 15.382 22.6365 16.7233 20.9879 16.7233H19.9903V25.3619H23.8574C23.8905 22.192 24.5711 19.8215 25.9922 17.9183C27.4468 15.9704 28.2156 13.6526 28.2156 11.2153C28.2156 8.28754 27.0942 5.51707 25.0579 3.41425Z"
+                fill="#007EA7"
+              />
+              <path
+                d="M23.8554 27.3545H10.1445V29.682H23.8554V27.3545Z"
+                fill="#007EA7"
+              />
+            </svg>
+          </div>
+
+          <span
+            class="heading text-deep-blue text-[clamp(18px,1.67vw,24px)] leading-110 opacity-90 font-normal"
+          >
+            Electricity Plan Comparisons
+          </span>
+        </div>
+
+        <span
+          class="mt-6 transition-transform duration-500 peer-checked:rotate-180"
+        >
+          <svg
+            width="15"
+            height="9"
+            viewBox="0 0 15 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.330173 0.344159C0.541647 0.123794 0.828428 3.62117e-08 1.12745 4.92825e-08C1.42648 6.23532e-08 1.71326 0.123794 1.92473 0.344159L7.50681 6.16269L13.0889 0.34416C13.3016 0.13004 13.5864 0.0115597 13.8821 0.014238C14.1778 0.0169162 14.4606 0.140538 14.6697 0.358478C14.8788 0.576418 14.9974 0.871238 15 1.17944C15.0025 1.48764 14.8889 1.78457 14.6834 2.00626L8.30409 8.65584C8.09261 8.87621 7.80583 9 7.50681 9C7.20778 9 6.921 8.87621 6.70953 8.65584L0.330173 2.00626C0.118763 1.78583 -6.49944e-08 1.4869 -5.137e-08 1.17521C-3.77456e-08 0.863519 -6.49944e-08 0.564591 -5.137e-08 0.344159Z"
+              fill="#00171F"
+            />
+          </svg>
+        </span>
+      </label>
+
+      <div
+        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out peer-checked:grid-rows-[1fr]"
+      >
+        <div class="overflow-hidden">
+          <p
+            class="para max-w-[442px] pl-[80px] pt-3 pb-2 font-normal text-deep-blue opacity-90 text-base leading-160"
+          >
+            Whether you want renewable energy, low rates, or flexible contracts,
+            we'll help you find the best provider.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div
+      class="accordion w-full bg-white p-[14px] border border-solid border-border-color rounded shadow-custom group transition-all duration-500 ease-out"
+    >
+      <input type="checkbox" id="accordion-toggle-1" class="peer hidden" />
+
+      <label
+        for="accordion-toggle-1"
+        class="flex items-start justify-between list-none cursor-pointer select-none"
+      >
+        <div
+          class="accordion-headers flex gap-[clamp(16px,1.67vw,24px)] items-center"
+        >
+          <div
+            class="size-16 rounded-full bg-light-blue flex justify-center items-center transition-all duration-500 ease-out group-hover:bg-prussian-blue"
+          >
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.0123 12.7354C12.4622 12.7354 12.0146 13.1829 12.0146 13.733C12.0146 14.2831 12.4622 14.7307 13.0123 14.7307H14.01V13.733C14.01 13.1829 13.5624 12.7354 13.0123 12.7354Z"
+                fill="#007EA7"
+              />
+              <path
+                d="M20.9879 12.7354C20.4377 12.7354 19.9902 13.1829 19.9902 13.733V14.7307H20.9879C21.5379 14.7307 21.9855 14.2831 21.9855 13.733C21.9855 13.1829 21.538 12.7354 20.9879 12.7354Z"
+                fill="#007EA7"
+              />
+              <path
+                d="M17.9984 16.7227H16.0029V25.3614H17.9984V16.7227Z"
+                fill="#007EA7"
+              />
+              <path
+                d="M23.8554 31.6738H10.1445V34H23.8554V31.6738Z"
+                fill="#007EA7"
+              />
+              <path
+                d="M25.0579 3.41425C23.0265 1.31648 20.3033 0.106423 17.3898 0.00681343C14.3331 -0.0975772 11.4397 1.00052 9.24298 3.09889C7.04912 5.19467 5.8214 8.02995 5.78594 11.0825C5.75692 13.5814 6.53275 15.9547 8.02934 17.9461C9.44685 19.8323 10.1201 22.1926 10.1438 25.3619H14.0106V16.7233H13.0129C11.3643 16.7233 10.023 15.382 10.023 13.7334C10.023 12.0848 11.3643 10.7436 13.0129 10.7436C14.6615 10.7436 16.0027 12.0848 16.0027 13.7334V14.7311H17.9981V13.7334C17.9981 12.0848 19.3393 10.7436 20.9879 10.7436C22.6365 10.7436 23.9778 12.0848 23.9778 13.7334C23.9778 15.382 22.6365 16.7233 20.9879 16.7233H19.9903V25.3619H23.8574C23.8905 22.192 24.5711 19.8215 25.9922 17.9183C27.4468 15.9704 28.2156 13.6526 28.2156 11.2153C28.2156 8.28754 27.0942 5.51707 25.0579 3.41425Z"
+                fill="#007EA7"
+              />
+              <path
+                d="M23.8554 27.3545H10.1445V29.682H23.8554V27.3545Z"
+                fill="#007EA7"
+              />
+            </svg>
+          </div>
+
+          <span
+            class="heading text-deep-blue text-[clamp(18px,1.67vw,24px)] leading-110 opacity-90 font-normal"
+          >
+            Electricity Plan Comparisons
+          </span>
+        </div>
+
+        <span
+          class="mt-6 transition-transform duration-500 peer-checked:rotate-180"
+        >
+          <svg
+            width="15"
+            height="9"
+            viewBox="0 0 15 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.330173 0.344159C0.541647 0.123794 0.828428 3.62117e-08 1.12745 4.92825e-08C1.42648 6.23532e-08 1.71326 0.123794 1.92473 0.344159L7.50681 6.16269L13.0889 0.34416C13.3016 0.13004 13.5864 0.0115597 13.8821 0.014238C14.1778 0.0169162 14.4606 0.140538 14.6697 0.358478C14.8788 0.576418 14.9974 0.871238 15 1.17944C15.0025 1.48764 14.8889 1.78457 14.6834 2.00626L8.30409 8.65584C8.09261 8.87621 7.80583 9 7.50681 9C7.20778 9 6.921 8.87621 6.70953 8.65584L0.330173 2.00626C0.118763 1.78583 -6.49944e-08 1.4869 -5.137e-08 1.17521C-3.77456e-08 0.863519 -6.49944e-08 0.564591 -5.137e-08 0.344159Z"
+              fill="#00171F"
+            />
+          </svg>
+        </span>
+      </label>
+
+      <div
+        class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-500 ease-in-out peer-checked:grid-rows-[1fr]"
+      >
+        <div class="overflow-hidden">
+          <p
+            class="para max-w-[442px] pl-[80px] pt-3 pb-2 font-normal text-deep-blue opacity-90 text-base leading-160"
+          >
+            Whether you want renewable energy, low rates, or flexible contracts,
+            we'll help you find the best provider.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
